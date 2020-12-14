@@ -8,6 +8,24 @@
 //   reverseInt(-15) === -51
 //   reverseInt(-90) === -9
 
-function reverseInt(n) {}
+// my solution
+function reverseInt(n) {
+    const numToString = parseInt(n.toString().split('').reverse().join(''));
+    if (n < 0) {
+        return -Math.abs(numToString)
+    } else {
+        return numToString
+    }
+    
+}
+
+// another solution.
+function reverseInt(n) {
+    const reversed = n.toString().split('').reverse().join('');
+    
+    // Math.sign() will give you negative sign if you passed a negative number into the argument
+    // and vice versa with positive number
+    return parseInt(reversed) * Math.sign(n)
+}
 
 module.exports = reverseInt;
