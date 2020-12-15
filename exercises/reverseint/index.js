@@ -8,7 +8,7 @@
 //   reverseInt(-15) === -51
 //   reverseInt(-90) === -9
 
-// my solution
+// My solution
 function reverseInt(n) {
     const numToString = parseInt(n.toString().split('').reverse().join(''));
     if (n < 0) {
@@ -19,7 +19,7 @@ function reverseInt(n) {
     
 }
 
-// another solution.
+// Course solution.
 function reverseInt(n) {
     const reversed = n.toString().split('').reverse().join('');
     
