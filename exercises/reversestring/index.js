@@ -6,6 +6,7 @@
 //   reverse('hello') === 'olleh'
 //   reverse('Greetings!') === '!sgniteerG'
 
+//  My solution
 function reverse(str) {
     /* 
         I split on each character. The split method will make the string into an array.
