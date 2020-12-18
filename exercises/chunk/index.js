@@ -10,28 +10,27 @@
 
 function chunk(array, size) {
     const chunked = [];
-    let index = 0;
-
-    while (index < array.length) {
-        chunked.push(array.splice(index, index + size));
-    }
-    return chunked;
-}
-
-function chunk(array, size) {
-    const chunked = [];
     
     for (let element of array) {
-        const last = chunked[chucked.length - 1]
+        const last = chunked[chunked.length - 1]
 
         if (!last || last.length === size) {
-            chucked.push([element])
+            chunked.push([element])
         } else {
-            last.push([element])
+            last.push(element)
         }
 
-        return chunked
     }
+    return chunked
 }
 
+// function chunk(array, size) {
+//     const chunked = [];
+//     let index = 0;
+
+//     while (index < array.length) {
+//         chunked.push(array.splice(index, index + size));
+//     }
+//     return chunked;
+// }
 module.exports = chunk;
